@@ -1,0 +1,29 @@
+header {
+  height: 64px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  background: #4A90E2;
+}
+
+header .home {
+  width: 120px;
+  margin-left: 42px;
+}
+
+header .perfil  {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 77px;
+}
+
+header .perfil a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+header .perfil img {
+  width: 25px;
+  height: 24px;
+}
