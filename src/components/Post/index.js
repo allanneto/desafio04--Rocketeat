@@ -2,20 +2,33 @@ import React from 'react';
 import Comment from '../Comment'
 
 
-const Post = ({ post : { author, date, content, comments } }) => (
-    <>
-         <div className="Post">
-             <div className="author">
-                 <img src={author.avatar} alt="avatar"/>
-                 <div className="info">
-                     <a href="">{author.name}</a>
-                     <span>{date}</span>
-                 </div>
-             </div>
-             <p>{content}</p>
-             {comments.map(comment => <Comment key={comments.id} data={comment} />)}
-         </div>
-    </>
-);
+    function Post({ post, comentario : {comments} }){
 
+    return (
+    <>
+            <div className="Post">
+                <div className="autor">
+                    <img src='' alt="avatar"/>
+                    <div className="info">
+                        <a href=""></a>
+                        <span> </span>
+                    </div>
+                </div>
+                <p>{post.content}</p>
+                {console.log(post.comments) }
+                <>
+                {post.comments.map(comment => <Comment key={comment.id} data={comment} />)}
+                {/* {post.comments.map(comment => 
+                (
+                <Comment 
+                key={comment.id} 
+                data={comment} 
+                />)
+                )
+                } */}
+                </>
+            </div>
+    </>
+    )
+}
 export default Post;

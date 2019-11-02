@@ -1,13 +1,14 @@
 import React from 'react';
 import Header from '../../components/Header'
 import Timeline from '../../components/Timeline'
+import Profile from '../../assets/profile.jpg'
 
 const posts = [
     {
       id: 1,
       author: {
         name: "Julio Alcantara",
-        avatar: "http://url-da-imagem.com/imagem.jpg"
+        avatar: 'avatar'
       },
       date: "04 Jun 2019",
       content: "Pessoal, alguém sabe se a Rocketseat está contratando?",
@@ -16,7 +17,7 @@ const posts = [
           id: 1,
           author: {
             name: "Diego Fernandes",
-            avatar: "http://url-da-imagem.com/imagem.jpg"
+            avatar: 'avatar'
           },
           content: "Conteúdo do comentário"
         }
@@ -32,7 +33,7 @@ function Page(){
   return (
     <>
         <Header/>
-        <Timeline key={index} posts={posts} />
+        <Timeline posts={posts} />
     </>
   )
 }

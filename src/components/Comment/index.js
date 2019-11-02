@@ -1,10 +1,11 @@
 import React from 'react';
+import Profile from '../../assets/profile.jpg'
 
-const Comment = (data) => (
+const Comment = ({data : data}) => (
   <>
       <div className="comment">
-        <img src={data.author.avatar} alt="avatar"/>
-        <p><strong>{data.author.name}</strong> {data.content}</p>
+        <img src='' alt="avatar"/>
+        <p><strong></strong> {data.content}</p>
       </div>
   </>
   );

@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Post from '../Post'
 
 
@@ -10,7 +9,9 @@ const Timeline = ({posts}) => (
         <Post
           key={post.id}
           post={post}
+          comentario={post.comments}
         />
+        
       ))}
     </div>
 );
