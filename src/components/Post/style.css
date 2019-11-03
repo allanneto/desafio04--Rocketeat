@@ -1,0 +1,35 @@
+.post {
+  background: #FFFFFF;
+  border-radius: 5px;
+  width: 700px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0,.25);
+}
+
+.autor {
+  display: flex;
+}
+
+.autor img {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  margin-right: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info a{
+  text-decoration: none;
+  color: #4A4A4A;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.info span {
+  color: #9A9A9A;
+  font-size: 11px;
+
+}

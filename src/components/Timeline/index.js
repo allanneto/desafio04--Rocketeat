@@ -4,14 +4,13 @@ import Post from '../Post'
 
 
 const Timeline = ({posts}) => (
-    <div class="timeline">
+    <div className="timeline">
       {posts.map(post => (
         <Post
           key={post.id}
           post={post}
-          comentario={post.comments}
+          author={post.author}
         />
-        
       ))}
     </div>
 );

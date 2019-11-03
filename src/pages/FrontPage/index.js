@@ -24,8 +24,23 @@ const posts = [
       ]
     },
     {
-      id: 2
-      // Restante dos dados de um novo post
+      id: 2,
+      author: {
+        name: "Julio Alcantara",
+        avatar: 'avatar'
+      },
+      date: "04 Jun 2019",
+      content: "Pessoal, alguém sabe se a Rocketseat está contratando?",
+      comments: [
+        {
+          id: 1,
+          author: {
+            name: "Diego Fernandes",
+            avatar: 'avatar'
+          },
+          content: "Conteúdo do comentário"
+        }
+      ]
     }
   ];
 

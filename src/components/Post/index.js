@@ -1,23 +1,25 @@
 import React from 'react';
 import Comment from '../Comment'
+import './style.css'
+import profile from '../../assets/profile.jpg'
 
-
-    function Post({ post, comentario : {comments} }){
-
+    function Post({ post, author }){
     return (
     <>
-            <div className="Post">
+            <div className="post">
                 <div className="autor">
-                    <img src='' alt="avatar"/>
+                    <img src={profile} alt="avatar"/>
                     <div className="info">
-                        <a href=""></a>
-                        <span> </span>
+                        <a href="">{author.name}</a>
+                        <span>{post.date}</span>
                     </div>
                 </div>
                 <p>{post.content}</p>
-                {console.log(post.comments) }
-                <>
-                {post.comments.map(comment => <Comment key={comment.id} data={comment} />)}
+                {post.comments.map(comment => 
+                <Comment 
+                key={comment.id} 
+                data={comment} 
+                />)}
                 {/* {post.comments.map(comment => 
                 (
                 <Comment 
@@ -26,7 +28,7 @@ import Comment from '../Comment'
                 />)
                 )
                 } */}
-                </>
+
             </div>
     </>
     )

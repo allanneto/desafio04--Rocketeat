@@ -1,0 +1,32 @@
+div.comment {
+  display: flex;
+  margin: 15px;
+}
+
+div.comment img {
+  height: 28px;
+  width: 28px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+div.comment .area {
+  display: flex;
+  background: #F2F2F2;
+  width: 622px;
+  border-radius: 20px;
+}
+
+div.comment .area p{
+  padding-right: 15px;
+  padding-left: 15px;
+  line-height: 20px;
+  font-size: 13px;
+  color: #3E3E3E;
+}
+
+div.comment .area p a {
+  border-right: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
