@@ -1,6 +1,6 @@
 div.comment {
   display: flex;
-  margin: 15px;
+  flex: 1;
 }
 
 div.comment img {

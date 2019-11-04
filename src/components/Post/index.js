@@ -1,14 +1,15 @@
 import React from 'react';
 import Comment from '../Comment'
 import './style.css'
-import profile from '../../assets/profile.jpg'
+import allan from '../../assets/allan.jpeg'
 
     function Post({ post, author }){
     return (
     <>
+    <div className="content">
             <div className="post">
                 <div className="autor">
-                    <img src={profile} alt="avatar"/>
+                    <img src={allan} alt="avatar"/>
                     <div className="info">
                         <a href="">{author.name}</a>
                         <span>{post.date}</span>
@@ -20,16 +21,8 @@ import profile from '../../assets/profile.jpg'
                 key={comment.id} 
                 data={comment} 
                 />)}
-                {/* {post.comments.map(comment => 
-                (
-                <Comment 
-                key={comment.id} 
-                data={comment} 
-                />)
-                )
-                } */}
-
             </div>
+    </div>
     </>
     )
 }

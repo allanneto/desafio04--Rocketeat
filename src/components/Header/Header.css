@@ -21,6 +21,8 @@ header .perfil  {
 
 header .perfil a {
   text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
   color: #FFFFFF;
 }
 header .perfil img {

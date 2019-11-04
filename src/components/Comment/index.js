@@ -1,11 +1,11 @@
 import React from 'react';
 import './style.css'
-import profile from '../../assets/profile.jpg'
+import diego from '../../assets/diego.jpeg'
 
 const Comment = ({data : data}) => (
   <>
       <div className="comment">
-        <img src={profile} alt="avatar"/>
+        <img src={diego} alt="avatar"/>
         <div className="area">
           <p><a href="">{data.author.name}</a> {data.content}</p>
         </div>
